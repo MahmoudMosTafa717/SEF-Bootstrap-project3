@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+    <link rel="stylesheet" href="Css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="icon" href="images/logo-r.png">
+
+<!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary z-3 position-fixed w-100 opacity-78" style="height: 12vh;">
+            <div class="container-fluid">
+              <a href="index.html"><img src="images/logo-r.png" class="rounded-circle" style="width: 60px; height: 60px;" alt="logo"> </a>
+                <a class="navbar-brand gradient-text border-end pe-2" href="#">Tourism</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-light p-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active text- dark " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text- dark" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text- dark border border-2 border-dark rounded trips" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="letter-S">S</span>ites to visit
+                            </a>
+                            <ul class="dropdown-menu bg-white">
+                                <li><a class="dropdown-item text-warning" href="#">CAIRO</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">ALEX</a></li>
+                                <li><hr class="dropdown-divider color-info"></li>
+                                <li><a class="dropdown-item text-warning" href="#">LUXOR</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">ASWAN</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">SHARM EL SHIKH</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">EL GLALA</a></li>
+                                <li><a class="dropdown-item text-warning" href="#">MORE . .</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text- dark" href="#">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 border border-warning" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-dark text-white mx-3" type="submit">Search</button>
+                        <button class="btn btn-dark text-white" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    
+<!-- Modal -->
+        <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-light">
+                        <h5 class="modal-title text-dark font-weight-bolder" id="staticBackdropLabel">Login</h5>
+                        <button type="button" class="btn btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- form -->
+                        <form>
+                            <div class="m-3">
+                                <label class="form-label text-dark">Email address</label>
+                                <input type="email" class="form-control text-dark border-3 border-secondary rounded-2" aria-describedby="emailHelp">
+                                <p class="form-text text-secondary">We'll never share your email with anyone else.</p>
+                            </div>
+                            <div class="m-3">
+                                <label class="form-label text-dark">Password</label>
+                                <input type="password" class="form-control text-dark border-3 border-secondary rounded-2">
+                            </div>
+                            <div class="m-3 form-check">
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input bg-secondary" type="checkbox" role="switch" checked="">
+                                    <label class="form-check-label text-dark" for="flexSwitchCheckChecked">Remember me</label>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- /form -->
+                        <div class="modal-footer d-flex justify-content-between">
+                            <button type="submit" class="btn btn-warning text-dark">Login</button>
+                            <button type="button" class="btn btn-danger text-light" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="  position-relative  container-fluid">
+          <ul class="icons position-fixed z-3 top-50 end-0 translate-middle-y pe-2">
+            <li><a href="#" class="icon"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="#" class="icon"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+            <li><a href="#" class="icon"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+            <li><a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#" class="icon"><i class="fa-brands fa-square-instagram"></i></a></li>
+          </ul>
+        </div>
+        
+<!-- Home -->
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img src="images/karnak.jpg"
+                    class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption bg-opacity-25 bg-secondary " >
+                    <h3>Aswan</h3>
+                    <p>Karnak temple</p>
+                    <button class="btn btn-primary text-white mx-3" type="submit">Visit Us</button>
+                </div>
+            </div>
+            <div class="carousel-item" >
+                <img src="images/valley.jpg" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption bg-opacity-25 bg-secondary " >
+                    <h3>Luxor</h3>
+                    <p>Valley of the kings</p>
+                    <button class="btn btn-dark text-white mx-3" type="submit">Visit Us</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/khan.jpg" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption bg-opacity-25 bg-secondary " >
+                    <h3>Cairo</h3>
+                    <p>Khan El-Khalili</p>
+                    <button class="btn btn-info text-white mx-3" type="submit">Visit Us</button>
+                </div>
+            </div>
+            <div class="carousel-item bg-opacity-25 bg-info " >
+                <img src="images/luxur.jpg" class="d-block w-100 vh-100" alt="...">
+                <div class="carousel-caption bg-opacity-25 bg-secondary " >
+                    <h3>El Galala</h3>
+                    <p>Welcome to El Galala!</p>
+                    <button class="btn btn-warning text-white mx-3" type="submit">Visit Us</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    
+<!-- Welcome -->
+    <div class="card w-100 bg-light mb-3 p-3" >
+      <div class="card-body text-dark">
+        <h5 class="card-title">WELCOME</h5>
+        <p class="card-text">Are you planning to visit Egypt? We offer the ultimate tour in Egypt, covering Cairo, alex. From a one day trip to a 10 day dream vacation, we will take care of all your needs.</p>
+        <a href="#" class="btn btn-secondary">Learn more</a>
+      </div>
+    </div>
+
+    <hr>
+
+<!-- Popular destinations -->
+    <div class="mt-4 p-3 bg-color2 text-white text-center rounded">
+      <h2>Popular destinations in Egypt</h2>
+    </div>
+    <br>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed shadow  bg-body-tertiary rounded gradient-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            GIZA CITY
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body ">Giza is an Egyptian city on the west bank of the Nile, near Cairo. The Giza Plateau is home to iconic Egyptian monuments, including 3 tall pyramids built as royal mausoleums around the 26th century B.C.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed shadow   bg-body-tertiary rounded gradient-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            LUXOR CITY
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body ">Luxor is a city on the east bank of the Nile River in southern Egypt. It's on the site of ancient Thebes, the pharaohs' capital at the height of their power,graceful Luxor Temple and Karnak Temple</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed shadow  bg-body-tertiary rounded gradient-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            SINAI
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body ">Egypt's Sinai Peninsula is a sparsely populated desert region between the Red Sea and the Mediterranean Sea. On its southern tip, Sharm el-Sheikh resort is a base for diving and snorkeling around the reefs of Ras Mohammed National Park.</div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+<!-- Translate -->
+    <div class="card">
+      <div class="card-header text-center text-white bg-color2 rounded">
+        <h2>Translate From Arabic To English </h2>
+      </div>
+      <div class="card-body bg-light rounded">
+      <h5 class="card-title text-dark">Write and Translate <a href="#" style="color:#424c5b ;">Press Here</a></h5>
+        <button type="button" id="copy" class="btn btn-secondary text-light" data-bs-toggle="tooltip" data-bs-placement="right" title="Copy to Clipboard" >Copy</button>
+        <div class="mb-3 mt-3">
+          <textarea class="form-control" placeholder="translate:" rows="5"></textarea>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="card">
+      <div class="card-header text-center text-white bg-color2 rounded">
+        <h2>Translate From Arabic To French </h2>
+      </div>
+      <div class="card-body bg-light rounded">
+      <h5 class="card-title text-dark">Write and Translate <a href="#" style="color:#424c5b ;">Press Here</a></h5>
+        <button type="button" id="copy2" class="btn btn-secondary text-light" data-bs-toggle="tooltip" data-bs-placement="right" title="Copy to Clipboard" >Copy</button>
+        <div class="mb-3 mt-3">
+          <textarea class="form-control" placeholder="translate:" rows="5"></textarea>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="card">
+      <div class="card-header text-center text-white bg-color2 rounded">
+        <h2>Translate From Arabic To German </h2>
+      </div>
+      <div class="card-body bg-light rounded">
+      <h5 class="card-title text-dark">Write and Translate <a href="#" style="color:#424c5b ;">Press Here</a></h5>
+        <button type="button" id="copy3" class="btn btn-secondary text-light" data-bs-toggle="tooltip" data-bs-placement="right" title="Copy to Clipboard">Copy</button>
+        <div class="mb-3 mt-3">
+          <textarea class="form-control" placeholder="translate:" rows="5"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="bg-img" style="height: 22rem;"></div>
+
+<!-- Popular destinations -->
+    <section class="bg-light">
+        <div>
+          <div class="p-3 bg-color2 text-white text-center rounded">
+            <h2 class="fs-1 ">Popular destinations in Egypt</h2>
+          </div>
+
+            <div class="row  justify-content-md-center ps-5 position-relative  ">
+              
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="images/cairo.jpg" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-dark fs-4 me-5">CAIRO</span>
+                      <a href="#" class="btn btn-dark text-white ms-5">Know more</a>
+                      <p class="card-text text-dark me-5">Capital of Egypt</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="images/Alexandria-City-Egypt-Egypt-Tours-Portal.jpg" class="card-img-top px-2" style="height: 27rem;"  alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-dark fs-4  me-5">ALEXANDRIA</span>
+                      <a href="#" class="btn btn-dark text-white">Know more</a>
+                      <p class="card-text text-dark me-5">The bride of mediterranean</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="images/luxr.jpg" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-dark fs-4  me-5">LUXOR</span>
+                      <a href="#" class="btn btn-dark text-white ms-5">Know more</a>
+                      <p class="card-text text-dark me-5">The capital of the Ancient Kingdom</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="images/Historical-Role-of-the-Nile-River-Egypt-Tours-Portal.jpg" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-dark fs-4 me-5">ASWAN</span>
+                      <a href="#" class="btn btn-dark text-white ms-5">Know more</a>
+                      <p class="card-text text-dark me-5">Nubian city in The South of Egypt</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="images/newcapital.jpeg" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-dark fs-4  me-5">NEW CAPITAL</span>
+                      <a href="#" class="btn btn-dark text-white">Know more</a>
+                      <p class="card-text text-dark me-5">The New Administrative of Egypt </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="images/rixos-sharm-el-sheikh.jpg" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-dark fs-4  ">SHARM EL SHIKH</span>
+                      <a href="#" class="btn btn-dark text-white ms-3">Know more</a>
+                      <p class="card-text text-dark me-5">Beautiful City in Egypt</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="images/siwa.jpg" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-dark fs-4  me-5">SIWA</span>
+                      <a href="#" class="btn btn-dark text-white ms-5">Know more</a>
+                      <p class="card-text text-dark me-5">Sunset Oasis</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-12 p-4">
+                <div class="card card1 shadow ms-4" style="width:22rem; ">
+                  <img src="images/Hurghada-marina.jpg" class="card-img-top px-2" style="height: 27rem;" alt="...">
+                  <div class="card-body">
+                      <span class="card-title text-dark fs-4  me-5">HURGHADA</span>
+                      <a href="#" class="btn btn-dark text-white">Know more</a>
+                      <p class="card-text text-dark me-5">City on The Red Sea</p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+        </div>
+    </section>
+    <div class="bg-img mb-4" style="height: 18rem;"></div>
+    <hr>
+
+<!-- Discoveries -->
+    <section class="bg-light mt-4 mb-5">
+        <div class="p-3 bg-color2 text-white text-center rounded">
+          <h2 class="fs-1 ">Discoveries in History</h2>
+        </div>
+
+          <div class="row  justify-content-md-center  p-5 position-relative">
+            <div class="hov-card2 col-lg-4 col-sm-12 ">
+              <div class="card2 card21 shadow ms-4 ">
+                <div class="overlay p-4">
+                  <h4>Rosseta Stone</h4>
+                  <p><i class="fa-regular fa-clock"></i> January 1, 2000</p>
+                  <img src="images/Rosetta-Stone-in-situ.webp" class="w-25 rounded-circle" alt="">
+                  <p class="m-2">Rosseta Stone</p>
+                  <span>Rosseta Stone</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hov-card2 col-lg-4 col-sm-12 ">
+              <div class="card2 card22 shadow ms-4 ">
+                <div class="overlay p-4">
+                  <h4>Tot Ankh Amon Grave</h4>
+                  <p><i class="fa-regular fa-clock"></i> January 1, 2000</p>
+                  <img src="images/tot.jpg" class="w-25 rounded-circle" alt="">
+                  <p class="m-2">Tot Ankh Amon</p>
+                  <span>Tot Ankh Amon</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hov-card2 col-lg-4 col-sm-12 ">
+              <div class="card2 card23 shadow ms-4 ">
+                <div class="overlay p-4">
+                  <h4>Appreciation and respect</h4>
+                  <p><i class="fa-regular fa-clock"></i> January 1, 2000</p>
+                  <img src="images/hawas.webp" class="w-25 rounded-circle" alt="">
+                  <p class="m-2">Zahi Hawas</p>
+                  <span>Egyptian archaeologist</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  </section>
+  <hr>
+
+
+
+  <!-- Doc section -->
+  <div class="p-3 gradient-text text-center  rounded">
+    <h2 class="fs-1">EGYPT History</h2>
+  </div>
+  
+  <div class="card card3 grid-bg mb-4 m-auto">
+    <div class="row g-5 ">
+      <div class="col-md-8 col-sm-12">
+        <div class="card-body p-5">
+          <span class="card-title fs-2" style="color: #08567a;">Sphinx !</span>
+          <p class="card-text mb-1"><small class="text-body-secondary"><i class="fa-solid fa-calendar-days"></i> Sat, Jan 1st 2020</small></p>
+          <div class="line"></div>
+          <p class="card-text mt-2">A sphinx is a mythical creature with the head of a human, the body of a lion, and the wings of an eagle. In Greek tradition, the sphinx is a treacherous and merciless being with the head of a woman, the haunches of a lion, and the wings of a bird.</p>
+          
+          <div style="margin-top: 80px;">
+            <button type="button" class="btn btn-light py-0 text-dark"><i class="fa-solid fa-tag"></i> Video</button>
+            <button type="button" class="btn btn-light py-0 text-dark "><i class="fa-solid fa-clock"></i> 30 mins.</button>
+            <button type="button" class="btn btn-dark py-0 btn3"><i class="fa-solid fa-play"></i>  Watch doc.</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <img src="images/sphinx.jpg" class="img-fluid clip rounded-end w-100 " style="height: 400px;" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <div class="card card3 grid-bg mb-4 m-auto">
+    <div class="row g-5 ">
+      <div class="col-md-4 col-sm-12">
+        <img src="images/alex.jpg" class="img-fluid clip2 rounded-start w-100 " style="height: 400px;" alt="...">
+      </div>
+
+      <div class="col-md-8 col-sm-12">
+        <div class="card-body p-5">
+          <span class="card-title fs-2" style="color: #08567a;">Qaitbay Citadel</span>
+          <p class="card-text mb-1"><small class="text-body-secondary"><i class="fa-solid fa-calendar-days"></i> Sun, Feb 29th 2021</small></p>
+          <div class="line"></div>
+          <p class="card-text mt-2">Sultan Abu Al-Nasr Sayf ad-Din Al-Ashraf Qaitbay was the eighteenth Burji Mamluk Sultan of Egypt from 872 to 901 A.H. He was Circassian by birth, and was purchased by the ninth sultan Barsbay before being freed by the eleventh Sultan Jaqmaq.</p>
+          
+          <div style="margin-top: 80px;">
+            <button type="button" class="btn btn-light py-0 text-dark"><i class="fa-solid fa-tag"></i> Video</button>
+            <button type="button" class="btn btn-light py-0 text-dark "><i class="fa-solid fa-clock"></i> 45 mins.</button>
+            <button type="button" class="btn btn-dark py-0 btn3"><i class="fa-solid fa-play"></i>  Watch doc.</button>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+  <div class="card card3 grid-bg mb-4 m-auto">
+    <div class="row g-5 ">
+      <div class="col-md-8 col-sm-12">
+        <div class="card-body p-5">
+          <span class="card-title fs-2" style="color: #08567a;">Ancient Egyptian literature</span>
+          <p class="card-text mb-1"><small class="text-body-secondary"><i class="fa-solid fa-calendar-days"></i> Mon, Dec 9th 2002</small></p>
+          <div class="line"></div>
+          <p class="card-text mt-2">was written with the Egyptian language from ancient Egypt's pharaonic period until the end of Roman domination. It represents the oldest corpus of Egyptian literature. Along with Sumerian literature, it is considered the world's earliest literature.</p>
+          
+          <div style="margin-top: 80px;">
+            <button type="button" class="btn btn-light py-0 text-dark"><i class="fa-solid fa-tag"></i> Video</button>
+            <button type="button" class="btn btn-light py-0 text-dark "><i class="fa-solid fa-clock"></i> 55 mins.</button>
+            <button type="button" class="btn btn-dark py-0 btn3"><i class="fa-solid fa-play"></i>  Watch doc.</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <img src="images/ma.jpg" class="img-fluid clip rounded-end w-100 " style="height: 400px;" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <div class="card card3 grid-bg mb-4 m-auto">
+    <div class="row g-5 ">
+      <div class="col-md-4 col-sm-12">
+        <img src="images/rivernile.jpg" class="img-fluid clip2 rounded-start w-100 " style="height: 400px;" alt="..">
+      </div>
+
+      <div class="col-md-8 col-sm-12">
+        <div class="card-body p-5">
+          <span class="card-title fs-2" style="color: #08567a;">Nile River</span>
+          <p class="card-text mb-1"><small class="text-body-secondary"><i class="fa-solid fa-calendar-days"></i> Tue, Mar 10th 2023</small></p>
+          <div class="line"></div>
+          <p class="card-text mt-2">The Nile is a major north-flowing river in northeastern Africa. It flows into the Mediterranean Sea. The Nile is the longest river in Africa and has historically been considered the longest river in the world, though this has been contested by research suggesting that the Amazon River is slightly.</p>
+          
+          <div style="margin-top: 80px;">
+            <button type="button" class="btn btn-light py-0 text-dark"><i class="fa-solid fa-tag"></i> Video</button>
+            <button type="button" class="btn btn-light py-0 text-dark "><i class="fa-solid fa-clock"></i> 1 hour.</button>
+            <button type="button" class="btn btn-dark py-0 btn3"><i class="fa-solid fa-play"></i>  Watch doc.</button>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="p-3 gradient-text text-center  rounded">
+    <h2 class="fs-1 ">JOIN US</h2>
+  </div>
+  
+  <div class="container row g-1 m-auto mb-3 ">
+      <div class="col-lg-3  text-center bg-white ms-4 rounded card3" style="width: 300px; height: 200px;">
+        <p class="text-dark fs-4">Follow Now</p>
+        <i class="fa-brands fa-square-x-twitter text-dark" style="font-size: 100px;"></i>
+        <a href="#"><p class="text-secondary fs-4">Click here</p></a>
+      </div>
+  
+      <div class="col-lg-3  text-center bg-white ms-4 rounded card3" style="width: 300px; height: 200px;">
+        <p class="text-dark fs-4">Contact us</p>
+        <i class="fa-brands fa-square-whatsapp"  style="font-size: 100px; color: #25D366;" ></i>
+        <a href="#"><p class="text-success fs-4">Click here</p></a>
+      </div>
+  
+      <div class="col-lg-3 text-center bg-white ms-4 rounded card3" style="width: 300px; height: 200px;">
+        <p class="text-dark fs-4">Connect</p>
+        <i class="fa-brands fa-linkedin text-primary" style="font-size: 100px;"></i>
+        <a href="#"><p class="text-info fs-4">Click here</p></a>
+      </div>
+  
+      <div class="col-lg-3  text-center bg-white ms-4 rounded card3" style="width: 300px; height: 200px;">
+        <p class="text-dark fs-4">Watch</p>
+        <i class="fab fa-instagram" style="font-size: 105px; margin-top: -5px ; background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045); background-clip: text; -webkit-text-fill-color: transparent;"></i>
+        <a href="#"><p class="text-danger fs-4 ">Click here</p></a>
+      </div>  
+    </div>
+  
+<!-- Footer -->
+  <div class="footer row bg-light p-2">
+
+    <div class="col-lg-4 col-sm-12 text-center text-dark " >
+      <div class="border-top border-bottom p-3">
+        <img src="images/logo-r.png" class="rounded-circle me-2" style="width: 70px; height: 70;" alt="..">
+        <span class=" fs-5">Our Company</span>
+      </div>
+      <div class="p-2">
+        <p>Tel: 01061598031</p>
+        <p>Address: EGYPT</p>
+        <p>Fax: 0000-000-000</p>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-sm-12 text-center text-dark " >
+      <div class="border-top border-bottom p-3">
+        <img src="images/logo-r.png" class="rounded-circle me-2" style="width: 70px; height: 70;" alt="..">
+        <span class=" fs-5">Take a Tour</span>
+      </div>
+      <div class="p-2">
+        <a href=""><p class="text-warning">Visit us</p></a>
+        <a href=""><p class="text-warning">Take a look</p></a>
+        <a href=""><p class="text-warning">Your health is more important</p></a>
+      </div>      
+    </div>
+
+    <div class="col-lg-4 col-sm-12 text-center text-dark " >
+      <div class="border-top border-bottom p-3">
+        <img src="images/logo-r.png" class="rounded-circle me-2" style="width: 70px; height: 200;" alt="..">
+        <span class=" fs-5">Vision</span>
+      </div>
+      <div class="p-2">
+        <p>Services for all</p>
+        <p>Provide best services</p>
+        <p>You will be better than before</p>
+      </div>
+    </div>
+    
+    <div class="border-top border-bottom p-3 text-center mb-5" >
+      <p class="gradient-text fs-4">COPYRIGHT &copy; ALLRIGHTS RESERVED FOR MAHMOUD MOSTAFA</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>  
+
+  </body>
+</html>
+
+
+

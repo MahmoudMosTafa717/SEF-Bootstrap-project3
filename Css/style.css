@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.trips:hover .letter-S {
+  color: gold;  
+  transition: color 0.5s ease;  
+}
+
+.icon {
+  color: #998d6a;  
+  font-size: 50px;
+}
+
+.icon:hover {
+  color: #e0cb88;  
+  transition: color 0.5s ease;  
+}
+.bg-color2 {
+  background-color: #424c5b;  
+  font-weight: normal;
+}
+
+.bg-img {
+  background-image: url(../images/manuscripts.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e0cb88; 
+  opacity: 0.4;
+  transition: height 1s, width 1s;
+}
+.card1:hover::after {
+  height: 100%;
+  width: 100%;
+}
+.card1::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  left: 0;
+  top: 0;
+  background-color: #e0cb88;  
+  opacity: 0.4;
+  transition: height 1s, width 1s;  
+}
+.card1:hover::before {
+  height: 100%;
+  width: 100%;
+}
+
+.card2 {
+  width: 25rem;
+  background-size: cover;
+  height: 27rem;
+  color: #ffff;
+  margin-bottom: 100px;
+  transition: transform 0.7s ease;  
+}
+.card21{
+  background-image: url(../images/rosseta.jpg);
+}
+.card22{
+  background-image: url(../images/tot.jpg);
+}
+.card23{
+  background-image: url(../images/tourists.jpg);
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  transition: background-color 0.7s ease;  
+}
+.overlay img {
+  margin-top: 135px;
+  border: 2px solid #bcac94;  
+  transition: margin-top 0.7s ease, border 0.7s ease;  
+}
+.overlay h4 {
+  transition: margin-top 0.7s ease;  
+}
+.hov-card2 {
+  transition: transform 0.7s ease;  
+}
+.hov-card2:hover {
+  transform: scale(0.9);
+}
+.hov-card2:hover .overlay {
+  background-color: rgba(66, 76, 91, 0.7); 
+}
+.hov-card2:hover .overlay h4 {
+  margin-top: 30px;
+}
+.hov-card2:hover .overlay img {
+  margin-top: 105px;
+}
+.line {
+  height: 4px;
+  width: 50px;
+  border-radius: 3px;
+  background-color: #bf9913; 
+  transition: width 0.5s ease; 
+}
+.grid-bg {
+  background: -webkit-linear-gradient(left, #bcac94, #fff); 
+  width: 80%;
+}
+.card3:hover .line {
+  width: 125px;
+}
+.btn3 {
+  color: #bf9913;
+  transition: color 0.5s ease; 
+}
+.btn3:hover {
+  color: #ffff;
+  background-color: #bf9913; 
+  transition: color 0.5s ease, background-color 0.5s ease; 
+}
+.clip {
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 20% 100%);
+}
+.clip2 {
+  clip-path: polygon(0 0, 85% 0, 75% 100%, 0% 100%);
+}
+.card3 img {
+  transition: transform 0.7s ease; 
+}
+.card3 {
+  overflow: hidden;
+  box-shadow: 2px 2px 15px 6px rgba(188, 172, 148, 0.365); 
+}
+.card3 img:hover {
+  transform: scale(1.1);
+}
