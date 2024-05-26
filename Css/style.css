@@ -152,3 +152,15 @@ a {
 .card3 img:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 768px){
+  .dest-section{
+    padding-left: 0 !important ;
+  }
+}
+
+@media (max-width: 768px){
+  .disc-section{
+    padding-left: 0 !important ;
+  }
+}
