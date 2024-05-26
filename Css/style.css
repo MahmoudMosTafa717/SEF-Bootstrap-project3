@@ -165,3 +165,9 @@ a {
     width: 60% !important ;
   }
 }
+@media (max-width: 768px){
+  .card3{
+    margin: auto !important ;
+    margin-bottom:10px !important;
+  }
+}
